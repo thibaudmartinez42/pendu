@@ -72,7 +72,7 @@ def affichermot(mot):
     lettre=list(mot)
     motT=[]
     for i in lettre :
-        motT.append("_")
+        motT.append("_ ")
     motT[0]=lettre[0]
     return motT
 
@@ -95,14 +95,14 @@ def jouer():
     motT=affichermot(mot)
     vie=8
     lettre_demandé =[]
-    print(mot)
+    print(''.join(mot))
     while vie>0  :
         print("test")
         ltt=input("donner une lettre : ")
         Pos_Lettre = VerifLettre(mot,ltt)
         vie = Ajout_lettre_demandé(lettre_demandé, ltt, Pos_Lettre, mot,motT,vie)
         Verfication_Win(mot,motT)
-        print (motT)
+        print (''.join(motT))
 
 
 
