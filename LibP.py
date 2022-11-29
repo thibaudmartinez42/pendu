@@ -16,9 +16,7 @@ def Ajout_lettre_demandé(lettre_demandé , Nouv_lettre , lst):
         ajout = True
         if len(lst) > 0 :
             afficher_mot(mot, )
-
-
-
+        
 def RecupFichier(Texte):
     liste=open(Texte)
     listeL=liste.readlines()
@@ -34,3 +32,14 @@ def Alea(listeS):
 def affichermot(mot):
     lettre=list(mot)
     motT=[]
+    for i in lettre :
+        motT.append("_")
+    motT[0]=lettre[0]
+    return motT
+
+def Remplacer_(lt,motT,mot):
+    if lt in mot :
+        lst = VerifLettre(lt,mot)
+        for i in lst:
+            motT[i]=mot[i]
+    return motT
