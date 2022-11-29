@@ -43,3 +43,19 @@ def Remplacer_(lt,motT,mot):
         for i in lst:
             motT[i]=mot[i]
     return motT
+
+def jouer():
+    lst=RecupFichier(Texte)
+    mot=Alea(lst)
+    motT=affichermot(mot)
+    vie=8
+    while vie>0 :
+        ltt=input("donner une lettre")
+        
+        motT=Remplacer_(ltt,motT,mot)
+        print (motT)
+
+
+
+
+    
