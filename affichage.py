@@ -1,4 +1,5 @@
 from tkinter import Tk , Label , Button, StringVar, Entry
+import LibP
 
 Mafenetre=Tk()
 Mafenetre.title("Pendu")
@@ -7,6 +8,7 @@ BoutonProp=Button(Mafenetre,text="proposé",)
 BoutonProp.pack(side='top',padx=5,pady=5)
 BoutonQuitter= Button(Mafenetre, text='quitter',command=Mafenetre.destroy)
 BoutonQuitter.pack(side='right', padx=5, pady=5)
+Label2=Label(Mafenetre,text=)
 Label1=Label(Mafenetre, text="lettre proposé")
 Label1.pack(side='left', padx=5, pady=5)
 Lettreprop=StringVar()
