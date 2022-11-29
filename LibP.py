@@ -1,5 +1,5 @@
 #Fichier fonction
-
+import LibP
 import random
 Texte = "listemotpendu.txt"
 
