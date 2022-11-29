@@ -1,0 +1,18 @@
+from tkinter import Tk , Label , Button, StringVar, Entry
+
+Mafenetre=Tk()
+Mafenetre.title("Pendu")
+Mafenetre.geometry("800x500")
+BoutonProp=Button(Mafenetre,text="proposé",)
+BoutonProp.pack(side='top',padx=5,pady=5)
+BoutonQuitter= Button(Mafenetre, text='quitter',command=Mafenetre.destroy)
+BoutonQuitter.pack(side='right', padx=5, pady=5)
+Label1=Label(Mafenetre, text="lettre proposé")
+Label1.pack(side='left', padx=5, pady=5)
+Lettreprop=StringVar()
+champ= Entry(Mafenetre, textvariable=Lettreprop)
+champ.focus_set()
+champ.pack(side='left',padx=5,pady=5)
+BouttonVal=Button(Mafenetre, text="entrée",)
+BouttonVal.pack(side='left',padx=5,pady=5)
+Mafenetre.mainloop()
