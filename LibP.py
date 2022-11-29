@@ -45,9 +45,7 @@ def pendu(Niv_Pendu):
     if Niv_Pendu = 0
         print("Manche Perdu pour rejouer entrez OUI")
         Rejouer = input
-    
-
-
+            
 
 def RecupFichier(Texte):
     liste=open(Texte)
@@ -64,3 +62,30 @@ def Alea(listeS):
 def affichermot(mot):
     lettre=list(mot)
     motT=[]
+    for i in lettre :
+        motT.append("_")
+    motT[0]=lettre[0]
+    return motT
+
+def Remplacer_(lt,motT,mot):
+    if lt in mot :
+        lst = VerifLettre(lt,mot)
+        for i in lst:
+            motT[i]=mot[i]
+    return motT
+
+def jouer():
+    lst=RecupFichier(Texte)
+    mot=Alea(lst)
+    motT=affichermot(mot)
+    vie=8
+    while vie>0 :
+        ltt=input("donner une lettre")
+        
+        motT=Remplacer_(ltt,motT,mot)
+        print (motT)
+
+
+
+
+    
