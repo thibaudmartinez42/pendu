@@ -1,4 +1,6 @@
 #Fichier fonction
+import random
+Texte = "listemotpendu.txt"
 def VerifLettre(Mot,lettre):
     lst = []
     for pos,char in enumerate(Mot):
@@ -15,8 +17,7 @@ def Ajout_lettre_demandé(lettre_demandé , Nouv_lettre , lst):
         if len(lst) > 0 :
             afficher_mot(mot, )
 
-import random
-Texte = "listemotpendu.txt"
+
 
 def RecupFichier(Texte):
     liste=open(Texte)
